@@ -1,0 +1,22 @@
+#Git files
+.git
+.gitignore
+.gitmodules
+README.md
+LICENSE
+
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+#Build dir
+build/
+
+#Example files
+*.example
