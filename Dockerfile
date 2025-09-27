@@ -1,3 +1,8 @@
+LABEL org.opencontainers.image.title borg-ssh-server
+LABEL org.opencontainers.image.description Simple borg ssh server
+LABEL org.opencontainers.image.authors TheDraca
+LABEL org.opencontainers.image.source https://github.com/TheDraca/borg-ssh-server
+
 FROM alpine:latest
 
 # Install OpenSSH and bash
