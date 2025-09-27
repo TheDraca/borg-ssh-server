@@ -2,6 +2,7 @@
 .git
 .gitignore
 .gitmodules
+.github
 README.md
 LICENSE
 
