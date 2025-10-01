@@ -7,7 +7,7 @@
 # To get a newer version, you will need to update the SHA.
 # You can also reference a tag or branch, but the action may change without warning.
 
-name: Publish Docker image
+name: Publish Docker Hub image
 
 on:
   schedule:
@@ -52,9 +52,3 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
 
-      - name: Generate artifact attestation
-        uses: actions/attest-build-provenance@v3
-        with:
-          subject-name: index.docker.io/thedraca/borg-ssh-server
-          subject-digest: ${{ steps.push.outputs.digest }}
-          push-to-registry: true
