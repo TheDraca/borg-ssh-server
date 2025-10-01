@@ -1,6 +1,10 @@
 # borg-ssh-server
 Simple Borg-compatible SSH server container for remote backups.
 
+[![ghcr.io Image](https://github.com/TheDraca/borg-ssh-server/actions/workflows/docker-publish.yml/badge.svg?branch=latest)](https://github.com/TheDraca/borg-ssh-server/actions/workflows/docker-publish.yml)
+[![Docker Hub image](https://github.com/TheDraca/borg-ssh-server/actions/workflows/dockerhub-publish.yml/badge.svg?branch=latest)](https://github.com/TheDraca/borg-ssh-server/actions/workflows/dockerhub-publish.yml)
+
+
 ## Persistent Host Key
 To prevent SSH host key regeneration on each container start, **mount `/etc/ssh` to a host path of your choosing**.
 
